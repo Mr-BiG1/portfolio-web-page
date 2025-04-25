@@ -85,8 +85,8 @@ export default function Home() {
               </motion.a>
               <motion.a
                 href="https://t.me/yourusername"
-            target="_blank"
-            rel="noopener noreferrer"
+                target="_blank"
+                rel="noopener noreferrer"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
                 className="text-muted-foreground hover:text-primary transition-colors"
@@ -111,7 +111,7 @@ export default function Home() {
           >
             <h2 className="text-3xl font-bold mb-12">About Me</h2>
             <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
@@ -120,12 +120,13 @@ export default function Home() {
               >
                 <div className="space-y-4">
                   <p className="text-lg text-muted-foreground leading-relaxed">
-                    I'm a passionate <span className="text-primary font-semibold">Cybersecurity Specialist</span> and 
-                    <span className="text-primary font-semibold"> Full Stack Developer</span> with expertise in building 
+                    I&apos;m a passionate <span className="text-primary font-semibold">Cybersecurity Specialist</span> and
+                    <span className="text-primary font-semibold"> Full Stack Developer</span> with expertise in building
                     secure and innovative solutions.
                   </p>
+
                   <p className="text-lg text-muted-foreground leading-relaxed">
-                    My work spans from ethical hacking and network defense to developing smart IoT systems and web applications. 
+                    My work spans from ethical hacking and network defense to developing smart IoT systems and web applications.
                     I focus on creating systems that are both functional and secure by design.
                   </p>
                 </div>
@@ -144,7 +145,7 @@ export default function Home() {
                   </div>
                 </div>
               </motion.div>
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, x: 20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
@@ -159,7 +160,7 @@ export default function Home() {
                 </div>
               </motion.div>
             </div>
-            
+
             {/* Experience Timeline */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -278,26 +279,26 @@ export default function Home() {
                     ))}
                   </div>
                   <div className="flex space-x-4">
-                    <a 
-                      href={project.github} 
-                      target="_blank" 
+                    <a
+                      href={project.github}
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="text-primary hover:text-primary/80 transition-colors"
                     >
                       <FaGithub className="h-5 w-5" />
                       <span className="sr-only">GitHub</span>
-          </a>
-          <a
-                      href={project.demo} 
-            target="_blank"
-            rel="noopener noreferrer"
+                    </a>
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="text-primary hover:text-primary/80 transition-colors"
-          >
+                    >
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                         <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
                       </svg>
                       <span className="sr-only">Live Demo</span>
-          </a>
+                    </a>
                   </div>
                 </motion.div>
               ))}
@@ -384,11 +385,12 @@ export default function Home() {
                 className="space-y-8 text-left"
               >
                 <div>
-                  <h3 className="text-2xl font-semibold mb-4">Let's Connect</h3>
+                  <h3 className="text-2xl font-semibold mb-4">Let&apos;s Connect</h3>
                   <p className="text-muted-foreground">
-                    I'm always interested in hearing about new projects and opportunities.
+                    I&apos;m always interested in hearing about new projects and opportunities.
                     Feel free to reach out!
                   </p>
+
                 </div>
 
                 <div className="space-y-4">
@@ -398,10 +400,10 @@ export default function Home() {
                     </div>
                     <div>
                       <h4 className="font-medium">Telegram</h4>
-                      <a 
-                        href="https://t.me/darsansabu" 
-          target="_blank"
-          rel="noopener noreferrer"
+                      <a
+                        href="https://t.me/darsansabu"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="text-primary hover:text-primary/80 transition-colors"
                       >
                         @darsansabu
@@ -415,10 +417,10 @@ export default function Home() {
                     </div>
                     <div>
                       <h4 className="font-medium">LinkedIn</h4>
-                      <a 
-                        href="https://www.linkedin.com/in/darsan-sabu-george-62732b271/" 
-          target="_blank"
-          rel="noopener noreferrer"
+                      <a
+                        href="https://www.linkedin.com/in/darsan-sabu-george-62732b271/"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="text-primary hover:text-primary/80 transition-colors"
                       >
                         Darsan Sabu George
@@ -432,10 +434,10 @@ export default function Home() {
                     </div>
                     <div>
                       <h4 className="font-medium">GitHub</h4>
-                      <a 
-                        href="https://github.com/Mr-BiG1" 
-          target="_blank"
-          rel="noopener noreferrer"
+                      <a
+                        href="https://github.com/Mr-BiG1"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="text-primary hover:text-primary/80 transition-colors"
                       >
                         @Mr-BiG1
@@ -446,7 +448,7 @@ export default function Home() {
 
                 <div className="p-6 bg-background rounded-lg shadow-lg">
                   <h4 className="font-semibold mb-2">Email</h4>
-                  <a 
+                  <a
                     href="mailto:darsansabu09@gmail.com"
                     className="text-primary hover:text-primary/80 transition-colors"
                   >
