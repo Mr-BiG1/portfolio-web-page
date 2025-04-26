@@ -1,6 +1,7 @@
 
 import BlogCard from "@/components/BlogCard";
 import { fetchBlogs } from "@/lib/blogService";
+import { format } from "date-fns"; 
 
 export default async function BlogListPage() {
     const blogs = await fetchBlogs();
