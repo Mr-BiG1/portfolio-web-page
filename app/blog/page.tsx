@@ -1,24 +1,18 @@
-import supabase from '@/lib/supabase'
 
-export default async function BlogPage() {
-    const { data: posts, error } = await supabase.from('posts').select('*').order('created_at', { ascending: false })
+import BlogCard from "@/components/BlogCard";
+import { fetchBlogs } from "@/lib/blogService";
 
-    if (error) return <p>Error fetching posts: {error.message}</p>
+export default async function BlogListPage() {
+    const blogs = await fetchBlogs();
 
     return (
-        <div className="p-8">
-            <h1 className="text-3xl font-bold mb-4">Blog</h1>
-            {posts.length === 0 ? (
-                <p>No posts yet.</p>
-            ) : (
-                posts.map((post) => (
-                    <div key={post.id} className="mb-6">
-                        <h2 className="text-xl font-semibold">{post.title}</h2>
-                        <p className="text-gray-600 text-sm">{post.created_at}</p>
-                        <p>{post.content.slice(0, 100)}...</p>
-                    </div>
-                ))
-            )}
+        <div className="w-full px-4 sm:px-7 lg:px-30 py-20">
+            <h1 className="text-4xl font-bold mb-8">Blog Posts</h1>
+            <div className="grid gap-6">
+                {blogs.map((blog) => (
+                    <BlogCard key={blog.id} blog={blog} />
+                ))}
+            </div>
         </div>
-    )
+    );
 }
