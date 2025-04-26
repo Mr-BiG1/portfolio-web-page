@@ -15,11 +15,11 @@ export default function BlogForm() {
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         try {
-           
-            await createBlog({title,slug,content,cover_image})
+
+            await createBlog({ title, slug, content, cover_image })
             router.push("/blog");
         } catch (error) {
-            // console.error(error);
+            alert("Error creating blog post");
             alert("Error creating blog post");
         }
     };

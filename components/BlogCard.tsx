@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { BlogPost } from "@/types/blog";
-
+import Image from "next/image";
 interface Props {
     blog: BlogPost;
 }
@@ -9,10 +9,13 @@ export default function BlogCard({ blog }: Props) {
     return (
         <div className="bg-secondary p-6 rounded-lg shadow-md">
             {blog.cover_image && (
-                <img
+                <Image
                     src={blog.cover_image}
                     alt={blog.title}
-                    className="w-full h-60 object-cover rounded-md mb-4"
+                    width={1200}
+                    height={500}
+                    className="rounded-md mb-6 w-full max-h-96 object-cover"
+                    priority
                 />
             )}
 
